@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peepal — Pre-Joining Policy Guide</title>
+<meta name="description" content="A guide to Peepal Consulting's key policies for new joiners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1C1B1C;--cream:#FFF8EF;--cream2:#FBEDDD;--paper:#FFFFFF;
+  --orange:#FF6600;--amber:#F5A623;--gold:#FFCF5C;--rust:#B23A1E;--brown:#7A3B12;
+  --muted:#8A7B6C;--line:rgba(28,27,28,.10);--line2:rgba(178,58,30,.22);
+  --serif:'Fraunces',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);font-family:var(--sans);color:var(--ink);line-height:1.62;font-size:15px}
+a{color:var(--rust)}
+.page{max-width:1060px;margin:0 auto;padding:0 24px}
+/* header */
+.top{background:radial-gradient(90% 120% at 100% 0%, #FFE6C8 0%, transparent 55%), var(--cream);
+  border-bottom:1px solid var(--line);padding:56px 0 40px}
+.top .ey{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:800;color:var(--rust)}
+.top h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,5vw,54px);line-height:1.02;letter-spacing:-.015em;margin:14px 0 10px}
+.top p{color:var(--brown);font-size:17px;max-width:66ch}
+.top .meta{margin-top:18px;font-size:13px;color:var(--muted)}
+/* layout with sticky toc */
+.body{display:grid;grid-template-columns:230px 1fr;gap:44px;padding:44px 0 80px;align-items:start}
+.toc{position:sticky;top:24px;font-size:13.5px}
+.toc .lbl{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-bottom:12px}
+.toc a{display:block;color:var(--brown);text-decoration:none;padding:6px 0;border-left:2px solid transparent;padding-left:12px;transition:.15s;font-weight:500}
+.toc a:hover{color:var(--orange);border-left-color:var(--orange)}
+/* sections */
+.sec{margin-bottom:44px;scroll-margin-top:20px}
+.sec-n{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--line2);padding-bottom:10px;margin-bottom:18px}
+.sec-n .num{font-family:var(--serif);font-weight:900;font-size:20px;color:var(--orange)}
+.sec-n h2{font-family:var(--serif);font-weight:700;font-size:26px;letter-spacing:-.01em}
+.sec h3{font-size:16px;font-weight:800;color:var(--rust);margin:20px 0 6px}
+.sec p{margin-bottom:10px}
+.sec ul{list-style:none;margin:6px 0 12px}
+.sec li{position:relative;padding-left:18px;margin-bottom:6px}
+.sec li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--amber)}
+.sec b,.sec strong{color:var(--ink);font-weight:700}
+.keep{background:#FFF3D6;border:1px solid #F1C96B;border-radius:6px;padding:1px 7px;font-size:11px;
+  font-weight:800;color:#8a5a10;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;vertical-align:middle}
+.callout{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--orange);
+  border-radius:10px;padding:14px 18px;margin:12px 0}
+.callout.crit{border-left-color:var(--rust);background:#FDF3F0}
+.callout .h{font-weight:800;font-size:13px;color:var(--rust);margin-bottom:4px;letter-spacing:.02em}
+.callout p{margin:0;font-size:13.5px;color:var(--brown)}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:13.5px}
+th{text-align:left;background:var(--cream2);color:var(--brown);font-weight:800;padding:8px 10px;border:1px solid var(--line2)}
+td{padding:8px 10px;border:1px solid var(--line)}
+.foot{border-top:1px solid var(--line);padding:26px 0 60px;color:var(--muted);font-size:13px}
+.calc{background:linear-gradient(135deg,#2A160C,#7A2410);border-radius:18px;padding:26px;color:#fff;margin:16px 0 8px;box-shadow:0 14px 34px rgba(122,59,18,.18)}
+.calc .lbl2{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--gold)}
+.calc h4{font-family:var(--serif);font-size:22px;margin:6px 0 16px;color:#fff}
+.calc .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.calc label{display:block;font-size:12.5px;font-weight:700;color:#F7DFC9;margin-bottom:6px}
+.calc input,.calc select{width:100%;padding:11px 13px;border-radius:10px;border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.09);color:#fff;font-family:var(--sans);font-size:15px;font-weight:600}
+.calc select option{color:#1C1B1C}
+.calc .out{margin-top:18px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.calc .out .big{font-family:var(--serif);font-weight:900;font-size:46px;color:var(--gold);line-height:1}
+.calc .out .cap{font-size:14px;color:#F7DFC9}
+.calc .note{margin-top:14px;font-size:12px;color:#F0CDB3;border-top:1px solid rgba(255,255,255,.18);padding-top:12px}
+@media(max-width:560px){.calc .row{grid-template-columns:1fr}}
+.backlink{display:inline-flex;align-items:center;gap:8px;color:var(--rust);text-decoration:none;font-weight:700;font-size:14px;margin-bottom:20px}
+@media(max-width:820px){.body{grid-template-columns:1fr}.toc{position:static;margin-bottom:20px;columns:2}}
+@media print{
+  .toc,.backlink,.top .meta{display:none}
+  body{background:#fff;font-size:11.5pt}
+  .top{background:#fff;padding:0 0 16px}
+  .sec{page-break-inside:avoid}
+  .callout,table{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="page">
+    <div class="ey">Peepal Consulting · 20 Years of Trust</div>
+    <h1>Your policy guide.</h1>
+    <p>How we work at Peepal — the everyday policies, benefits and ways of working, so you know what to expect before you join. The complete policies live on <b>Peepal Pulse</b>, our policy repository, once you come on board.</p>
+    <div class="meta">For pre-joining reference · The full policy documents and your offer letter always take precedence.</div>
+  </div>
+</div>
+
+<div class="page body">
+  <nav class="toc">
+    <div class="lbl">On this page</div>
+    <a href="#s1">1 · Work Hours &amp; Attendance</a>
+    <a href="#s2">2 · Leave &amp; Time Off</a>
+    <a href="#s3">3 · Maternity &amp; Paternity</a>
+    <a href="#s4">4 · Flexible Work / WFH</a>
+    <a href="#s5">5 · Pay &amp; Benefits</a>
+    <a href="#s6">6 · Performance &amp; Growth</a>
+    <a href="#s7">7 · Recognition &amp; Rewards</a>
+    <a href="#s8">8 · Code of Conduct</a>
+    <a href="#s9">9 · Respect, Safety &amp; POSH</a>
+    <a href="#s10">10 · Data &amp; Confidentiality</a>
+    <a href="#s11">11 · Travel &amp; Reimbursements</a>
+    <a href="#s12">12 · Ways of Working</a>
+  </nav>
+
+  <main>
+    <a class="backlink" href="index.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to Welcome</a>
+
+    <!-- 1 -->
+    <section class="sec" id="s1">
+      <div class="sec-n"><span class="num">01</span><h2>Work Hours &amp; Attendance</h2></div>
+      <ul>
+        <li><b>Working days:</b> Monday to Friday.</li>
+        <li><b>Login window:</b> between 8:00 AM and 10:29 AM.</li>
+        <li><b>Full day:</b> 9 hours including a 1-hour break (lunch, tea/snacks). <b>Half day:</b> 4 hours 30 minutes.</li>
+        <li><b>Attendance:</b> a login at or after 10:30 AM counts as absent for the first half; logging out before completing 9 hours counts as absent for the second half.</li>
+        <li><b>Overtime</b> is not applicable — extra hours are managed within the standard 9-hour day.</li>
+        <li>Attendance is marked on the <b>biometric system</b> at the office, and regularisation requests go to your reporting manager the next day with a valid reason.</li>
+      </ul>
+    </section>
+
+    <!-- 2 -->
+    <section class="sec" id="s2">
+      <div class="sec-n"><span class="num">02</span><h2>Leave &amp; Time Off</h2></div>
+      <h3>Casual leave</h3>
+      <ul>
+        <li><b>24 casual leaves a year</b> (2 credited each month); the leave year runs January to December.</li>
+        <li>In your <b>first month</b>, leaves are credited but can't yet be availed — any leave then is treated as leave without pay.</li>
+        <li>There's no separate sick-leave bucket — sick days are taken as casual leave. Leaves accumulate month on month, and unused casual leave carries forward automatically each year.</li>
+        <li>Apply on the HRMS (GreytHR) portal — inform your Team Lead and Manager at least <b>4 days ahead</b> for planned leave, or on your first day back for unplanned leave.</li>
+      </ul>
+      <h3>Compensatory off</h3>
+      <ul>
+        <li>Earned when you work on a weekend or public holiday: 4h 30m for a half day, 9 hours for a full day.</li>
+        <li>Limits: up to <b>2 a month, 4 a quarter, 16 a year</b>; comp-off expires 3 months after approval.</li>
+      </ul>
+      <h3>Leave encashment (on exit)</h3>
+      <ul>
+        <li>Confirmed employees can encash up to <b>5 days per year of service, capped at 20 days</b> over their tenure, at full &amp; final settlement.</li>
+      </ul>
+    </section>
+
+    <!-- 3 -->
+    <section class="sec" id="s3">
+      <div class="sec-n"><span class="num">03</span><h2>Maternity &amp; Paternity Leave</h2></div>
+      <div class="callout crit"><div class="h">Statutory — shown as written</div><p>These follow the Maternity Benefit (Amendment) Act, 2017. Figures are preserved exactly; the full terms are in the complete policy.</p></div>
+      <h3>Maternity</h3>
+      <ul>
+        <li><b>26 weeks</b> paid leave for the first two children; <b>12 weeks</b> for the third or subsequent child.</li>
+        <li><b>Miscarriage:</b> 6 weeks of paid recovery leave. <b>Adoption</b> (child under 3 months): 12 weeks.</li>
+        <li>Eligibility: at least 80 days of employment in the 12 months before the expected delivery date.</li>
+      </ul>
+      <h3>Paternity</h3>
+      <ul>
+        <li><b>2 weeks (15 days)</b> of paternity leave, taken in one go, for eligible employees.</li>
+      </ul>
+    </section>
+
+    <!-- 4 -->
+    <section class="sec" id="s4">
+      <div class="sec-n"><span class="num">04</span><h2>Flexible Work &amp; WFH</h2></div>
+      <ul>
+        <li>Up to <b>12 WFH days a year</b> (max 4 a month or 8 a quarter). Longer-tenure employees have higher limits under the current policy.</li>
+        <li>WFH needs prior manager approval by email with HR in copy.</li>
+        <li>Fridays can't be taken as WFH, and WFH can't be clubbed with a Friday leave. WFH days don't carry forward, and block WFH beyond the limits isn't permitted.</li>
+      </ul>
+    </section>
+
+    <!-- 5 -->
+    <section class="sec" id="s5">
+      <div class="sec-n"><span class="num">05</span><h2>Pay &amp; Benefits</h2></div>
+      <h3>Salary structure</h3>
+      <ul>
+        <li><b>75% fixed</b> (paid month on month) and <b>25% variable</b> (tied to performance) of your monthly CTC.</li>
+      </ul>
+      <h3>Insurance</h3>
+      <ul>
+        <li>Health cover of <b>₹5,00,000</b> and accident cover of <b>₹10,00,000</b>, provided through Plum — with discounted health check-ups, dental, mental-wellbeing and partner benefits (Lenskart, 1mg Labs and others). Applies to employees (not management trainees/interns).</li>
+      </ul>
+      <h3>Other benefits</h3>
+      <ul>
+        <li><b>Salary advance</b> for emergencies: confirmed employees, up to twice a financial year, on take-home pay (excluding variable), with 2 days' notice. Not available during the notice period.</li>
+        <li><b>Learning &amp; development:</b> after 1 year, Peepal reimburses 50% of an approved course, up to ₹25,000.</li>
+        <li><b>Referral bonus:</b> ₹5,000 for regular roles, ₹10,000 for critical roles.</li>
+        <li><b>Team engagement:</b> a ₹1,000 per-person, per-quarter team-outing budget.</li>
+      </ul>
+    </section>
+
+    <!-- 6 -->
+    <section class="sec" id="s6">
+      <div class="sec-n"><span class="num">06</span><h2>Performance &amp; Growth</h2></div>
+      <div class="callout"><div class="h">Growth here is earned, not waited for</div><p>At Peepal, your progress is tied to what you deliver — not to how long you've been around. The stronger your performance, the faster you grow.</p></div>
+
+      <h3>How performance is measured</h3>
+      <ul>
+        <li><b>Revenue model</b> (individual roles): monthly target = <b>5 × your monthly salary</b>; performance is your billing against that target (e.g. ₹1,00,000 billed against a ₹1,00,000 target = 100%).</li>
+        <li><b>P&amp;L model</b> (team-leading roles): Profit &amp; Loss = Revenue − Cost, where cost = total team salary × 1.5, and the target = 3 × the leader's monthly CTC.</li>
+        <li><b>Quality Assessment (QA):</b> a 1–5 rating from you and your manager; a minimum average of <b>4.0</b> is required for promotion eligibility.</li>
+      </ul>
+
+      <h3>Confirmation</h3>
+      <ul>
+        <li>Probation is <b>6 months</b>; confirmation requires a minimum performance of <b>45%</b>. Interns moving to full-time have probation reduced by their internship length.</li>
+      </ul>
+
+      <h3>Promotions are 100% performance-based</h3>
+      <p>There's no fixed annual increment cycle here. Both <b>role promotions</b> (a step up in title and responsibility) and <b>salary promotions</b> (a pay rise) are driven purely by your average performance over the review period — so a strong year can mean a significant hike. Clear the QA bar (4.0+) and your role's criteria, and your growth follows your numbers.</p>
+
+      <div class="calc">
+        <div class="lbl2">Try it — salary-promotion estimator</div>
+        <h4>What could your hike look like?</h4>
+        <div class="row">
+          <div>
+            <label for="perf">Your 12-month average performance (%)</label>
+            <input id="perf" type="number" min="0" max="300" step="1" value="120">
+          </div>
+          <div>
+            <label for="band">Your level</label>
+            <select id="band">
+              <option value="16">Consultant / Executive level</option>
+              <option value="14">Team Lead / Manager level</option>
+              <option value="12">Senior Manager &amp; above</option>
+            </select>
+          </div>
+        </div>
+        <div class="out"><span class="big" id="hike">19.2%</span><span class="cap">estimated salary-promotion hike</span></div>
+        <div class="note">Illustrative, based on a 12-month review at a 100% target. Your actual hike is performance-based and subject to policy limits and manager approval.</div>
+      </div>
+
+      <h3>If performance dips</h3>
+      <ul>
+        <li>A minimum performance of <b>45%</b> is expected. If it falls below that, a structured <b>Performance Improvement Plan (PIP)</b> gives you a defined window to get back on track before any further step.</li>
+      </ul>
+    </section>
+
+    <!-- 7 -->
+    <section class="sec" id="s7">
+      <div class="sec-n"><span class="num">07</span><h2>Recognition &amp; Rewards</h2></div>
+      <ul>
+        <li><b>Monthly &amp; quarterly:</b> Star Performer of the Month/Quarter, Team of the Month/Quarter, and the Centennial Club for standout achievement.</li>
+        <li><b>Annual:</b> Star Performer of the Year and Team of the Year.</li>
+        <li><b>The Hi-Per Club:</b> for those who sustain 150%+ performance — Silver, Gold, Platinum and Diamond tiers over 3, 6, 9 and 12 months.</li>
+        <li><b>Peepal Rockstar</b> and the <b>Badge of Honour</b> (our highest honour) recognise people who live Peepal's values; the <b>Rising Star / Spark-Plug</b> awards celebrate emerging talent and interns.</li>
+        <li>Awards and Hi-Per incentives don't apply during an employee's notice period.</li>
+      </ul>
+    </section>
+
+    <!-- 8 -->
+    <section class="sec" id="s8">
+      <div class="sec-n"><span class="num">08</span><h2>Code of Conduct</h2></div>
+      <p>We ask everyone to act with integrity, honesty and professionalism. In short:</p>
+      <ul>
+        <li>Treat colleagues, clients and vendors with respect; keep the workplace free of discrimination and harassment.</li>
+        <li>Avoid conflicts of interest; no outside employment that competes with or affects your work; disclose close relationships in a reporting line.</li>
+        <li><b>Zero tolerance</b> for bribery, corruption, fraud, theft or falsifying records — Peepal upholds an Anti-Bribery &amp; Anti-Corruption policy.</li>
+        <li>No drugs or alcohol at work; company assets and technology are for business use.</li>
+        <li>Speak up: anyone aware of a breach can raise it to their manager, HR, the COO or CEO — whistle-blowers are protected from retaliation.</li>
+      </ul>
+      <h3>Dress code</h3>
+      <ul>
+        <li>Business casual or formal, Monday to Friday — dress well for the office; follow event or client-site dress norms when they apply.</li>
+      </ul>
+    </section>
+
+    <!-- 9 -->
+    <section class="sec" id="s9">
+      <div class="sec-n"><span class="num">09</span><h2>Respect, Safety &amp; POSH</h2></div>
+      <ul>
+        <li><b>Prevention of Sexual Harassment (POSH):</b> Peepal maintains a zero-tolerance stance under the 2013 Act, with an Internal Committee that handles complaints confidentially and without retaliation. A complaint can be raised in writing within 3 months of an incident.</li>
+        <li><b>Zero-Tolerance Policy (ZTP):</b> workplace violence, harassment, discrimination, substance abuse, theft/fraud, breach of confidentiality and unethical conduct are grounds for disciplinary action up to termination.</li>
+        <li><b>Equal opportunity:</b> Peepal is an equal-opportunity employer — no discrimination on the basis of race, colour, religion, national origin, sex, age, marital or veteran status, or disability.</li>
+        <li><b>Grievances:</b> a clear escalation path — Team Lead → skip-level manager → HR → COO/Managing Director — plus HR one-on-ones, the employee survey, and an anonymous line to the CEO.</li>
+      </ul>
+      <div class="callout"><div class="h">Reaching the committee</div><p>POSH concerns can be raised to the Internal Committee via <b>posh.ic@peepalconsulting.com</b> — committee members are listed in the full policy on Peepal Pulse.</p></div>
+    </section>
+
+    <!-- 10 -->
+    <section class="sec" id="s10">
+      <div class="sec-n"><span class="num">10</span><h2>Data &amp; Confidentiality</h2></div>
+      <div class="callout crit"><div class="h">Part of your employment terms</div><p>These commitments are set out in the Data Protection &amp; Confidentiality Agreement you'll sign, and are preserved exactly.</p></div>
+      <ul>
+        <li>Client and candidate data is confidential — handle it only through Peepal-approved systems, and only for your work.</li>
+        <li>Follow the Digital Personal Data Protection Act, 2023 and Peepal's data-protection standards; report any suspected breach promptly.</li>
+        <li>Keep login credentials private; return or securely delete company data when you leave.</li>
+        <li><b>Non-solicitation:</b> for 3 months after leaving, you won't solicit Peepal's clients or candidates using confidential information.</li>
+        <li><b>Placed resources</b> are protected from re-engagement for 12 months during their assignment without the original client's consent.</li>
+      </ul>
+    </section>
+
+    <!-- 11 -->
+    <section class="sec" id="s11">
+      <div class="sec-n"><span class="num">11</span><h2>Travel &amp; Reimbursements</h2></div>
+      <ul>
+        <li>Business travel and accommodation need manager pre-approval; claims go to Accounts and HR with original bills.</li>
+        <li>Local business travel is supported (a company Uber account for client meetings, or per-km rates for personal vehicles).</li>
+        <li>Employees working at a client location receive a monthly client-deputation allowance in place of separate travel claims for those days.</li>
+        <li>Company assets (laptop, phone, SIM, headset and others) are issued for work use and returned in good condition on exit; report any loss or damage promptly.</li>
+      </ul>
+    </section>
+
+    <!-- 12 -->
+    <section class="sec" id="s12">
+      <div class="sec-n"><span class="num">12</span><h2>Ways of Working</h2></div>
+      <ul>
+        <li><b>Stay connected:</b> a monthly one-on-one with your manager, encouraged weekly check-ins, and quarterly skip-level conversations.</li>
+        <li><b>Move around:</b> after 12 months in role with strong performance, you can request a team switch with 30 days' notice.</li>
+        <li><b>Be heard:</b> an annual anonymous survey, quarterly live Q&amp;A, confidential HR one-on-ones, and a direct-to-CEO feedback line.</li>
+        <li><b>Interns:</b> minimum 4-month internships on standard payroll, eligible for the same leave, the Spark-Plug award, and a possible pre-placement offer.</li>
+        <li><b>Giving back:</b> Peepal's CSR commitments cover the environment, human rights and community support.</li>
+      </ul>
+    </section>
+
+    <div class="foot">
+      <p>This guide covers the essentials for new joiners. Where a policy involves eligibility, ratings, compensation or employment terms, the complete policy on <b>Peepal Pulse</b> and your offer letter take precedence. Questions? Write to <a href="mailto:hr@peepalconsulting.com">hr@peepalconsulting.com</a>.</p>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  var perf=document.getElementById('perf'),band=document.getElementById('band'),out=document.getElementById('hike');
+  if(!perf) return;
+  function calc(){
+    var p=parseFloat(perf.value); if(isNaN(p)||p<0)p=0;
+    var idx=parseFloat(band.value);
+    var hike=(p/100)*idx;           // 12-month review, trigger target = 100%
+    out.textContent=(Math.round(hike*10)/10)+'%';
+  }
+  perf.addEventListener('input',calc); band.addEventListener('change',calc); calc();
+})();
+</script>
+</body>
+</html>
